@@ -1,0 +1,35 @@
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+b main
+Breakpoint 1 at 0x9cf: file p8original.c, line 58.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p8original.c:58
+58  {
+(gdb) n
+59    int n = get_n();
+(gdb) n
+Enter the number of complex numbers: 2
+60    Complex c[n], res;
+(gdb) n
+61    input_n_complex(n, c);
+(gdb) n
+Enter the real part: 1 
+Enter the imaginary part: 3
+Enter the real part: 3
+Enter the imaginary part: 1
+62    res = add_n_complex(n, c);
+(gdb) n
+63    output(n, c, res);
+(gdb) n
+1.00 + 3.00i
++ 3.00 + 1.00i is
+4.00 + 4.00i
+65    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 577) exited normally]
+(gdb) 
+
+
