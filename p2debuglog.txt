@@ -1,0 +1,29 @@
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+b main
+Breakpoint 1 at 0x814: file p2original.c, line 25.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p2original.c:25
+25    n1=input();
+(gdb) n
+Enter two numbers
+2 4
+26    n2=input();
+(gdb) n
+Enter two numbers
+27    h=add(n1,n2);
+(gdb) n
+28    output(n1,n2,h);
+(gdb) n
+Sum of the two numbers 2 and 4 is = 6
+29    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 285) exited normally]
+(gdb) 
+
+
+
+
