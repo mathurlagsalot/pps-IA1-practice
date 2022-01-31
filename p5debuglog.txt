@@ -1,0 +1,22 @@
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:31
+31    n = input();
+(gdb) n
+Enter a number to find the sqaure root of: 36
+32    sr_res = sr(n);
+(gdb) n
+33    output(n, sr_res);
+(gdb) n
+Square root of given input 36.00 is = 6.00 
+34    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 181) exited normally]
+(gdb) 
+
+
+
