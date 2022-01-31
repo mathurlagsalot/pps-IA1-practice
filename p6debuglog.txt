@@ -1,0 +1,31 @@
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+b main
+Breakpoint 1 at 0x875: file p6original.c, line 36.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p6original.c:36
+36  {
+(gdb) n
+39    input(str1, str2);
+(gdb) n
+Enter a string: world
+Enter a string: hey
+40    result = cmp(str1, str2);
+(gdb) n
+41    output(str1, str2, result);
+(gdb) n
+42    return 0;
+(gdb) n
+43  }
+(gdb) c
+Continuing.
+world is greater than hey[Inferior 1 (process 298) exited normally]
+(gdb) 
+
+
+
+
+
+
